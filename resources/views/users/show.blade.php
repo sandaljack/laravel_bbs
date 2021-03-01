@@ -24,13 +24,6 @@
                 @include('users._topics', ['topics' => $user->topics()->recent()->paginate(5)])
             </div>
         </div>
-        <hr>
-        {{-- 用户发布的内容 --}}
-        <div class="card ">
-            <div class="card-body">
-            暂无数据 ~_~
-            </div>
-        </div>
     </div>
 </div>
 @stop
