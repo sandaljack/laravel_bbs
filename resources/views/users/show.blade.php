@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-lg-3 col-md-3 hidden-sm hidden-xs user-info">
         <div class="card ">
-            <img class="card-img-top" src="https://iocaffcdn.phphub.org/uploads/images/201709/20/1/PtDKbASVcz.png" >
+            <img class="card-img-top" src="{{ $user->avatar }}" alt="{{ $user->name }}">
             <div class="card-body">
                 <h5><strong>个人简介</strong></h5>
                 <p>{{ $user->introduction }}</p>
@@ -16,7 +16,6 @@
     </div>
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
         <div class="card ">
-            <img class="card-img-top" src="{{ $user->avatar }}" alt="{{ $user->name }}">
             <div class="card-body">
             <h1 class="mb-0" style="font-size:22px;">{{ $user->name }} <small>{{ $user->email }}</small></h1>
             </div>
